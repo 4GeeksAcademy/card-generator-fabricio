@@ -1,1 +1,51 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.naipe {
+  width: 250px;
+  height: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 90px;
+  font-weight: bold;
+  margin: auto;
+}
+
+.spade {
+  /* styles specific to spade cards */
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.club {
+  /* styles specific to club cards */
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.heart {
+  /* styles specific to heart cards */
+  color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+.diamond {
+  /* styles specific to diamond cards */
+  color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+#card-body p span:nth-child(1) {
+  /* styles for the second span element */
+  align-self: start;
+}
+
+#card-body p span:nth-child(2) {
+  /* styles for the second span element */
+  align-self: end;
+  transform: rotate(180deg);
+}
